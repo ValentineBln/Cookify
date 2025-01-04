@@ -1,22 +1,12 @@
-import { Recette } from "../models/Recette.js";
 import { afficherRecettes } from "./affichageRecettes.js";
-// Fonction pour sauvegarder les recettes dans le Local Storage
-function sauvegarderRecettesDansLocalStorage(recettes) {
-    localStorage.setItem("recettes", JSON.stringify(recettes));
-}
-// Fonction pour charger les recettes depuis le Local Storage
-function chargerRecettesDepuisLocalStorage() {
-    const data = localStorage.getItem("recettes");
-    if (data) {
-        return JSON.parse(data).map((recette) => new Recette(recette.id, recette.titre, recette.categorie, recette.ingredients, recette.etapes, recette.temps, recette.portions, recette.image));
-    }
-    return [];
-}
+import { Recette } from "../models/Recette.js";
+import { filtrerRecettesParCategorie } from "./filtrerRecettesParCategorie.js";
 export function ajouterRecette() {
     const form = document.getElementById("form-ajout-recette");
-    let recettes = chargerRecettesDepuisLocalStorage();
     form.addEventListener("submit", (event) => {
         event.preventDefault();
+        // Charger les recettes actuelles depuis le Local Storage
+        let recettes = JSON.parse(localStorage.getItem("recettes") || "[]");
         // Récupérer les données du formulaire
         const titre = document.getElementById("titre").value;
         const categorie = document.getElementById("categorie").value;
@@ -27,13 +17,16 @@ export function ajouterRecette() {
         const image = document.getElementById("image").value;
         // Créer une nouvelle recette
         const nouvelleRecette = new Recette(Date.now(), titre, categorie, ingredients, etapes, temps, portions, image);
-        // Ajouter la nouvelle recette à la liste et l'afficher
+        // Ajouter la nouvelle recette à la liste complète
         recettes.push(nouvelleRecette);
-        afficherRecettes([nouvelleRecette]);
-        // Sauvegarder les recettes dans le Local Storage
-        sauvegarderRecettesDansLocalStorage(recettes);
+        // Sauvegarder les recettes mises à jour dans le Local Storage
+        localStorage.setItem("recettes", JSON.stringify(recettes));
+        // Mettre à jour l'affichage avec toutes les recettes
+        afficherRecettes(recettes);
         // Réinitialiser le formulaire
         form.reset();
+        // Réactiver le filtrage par catégories avec la liste mise à jour
+        filtrerRecettesParCategorie(recettes);
     });
 }
 export function supprimerRecette(id) {
