@@ -29,8 +29,38 @@
                 <!-- Les cartes de recettes seront ajoutées dynamiquement -->
             </div>
         </section>
+        <section id="ajout-recette">
+            <h2>Ajouter une recette</h2>
+            <form id="form-ajout-recette">
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre" name="titre" required>
+        
+                <label for="categorie">Catégorie :</label>
+                <select id="categorie" name="categorie" required>
+                    <option value="Entrée">Entrée</option>
+                    <option value="Plat">Plat</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+        
+                <label for="ingredients">Ingrédients (séparés par des virgules) :</label>
+                <textarea id="ingredients" name="ingredients" required></textarea>
+        
+                <label for="etapes">Étapes (séparées par des virgules) :</label>
+                <textarea id="etapes" name="etapes" required></textarea>
+        
+                <label for="temps">Temps (minutes) :</label>
+                <input type="number" id="temps" name="temps" required>
+        
+                <label for="portions">Portions :</label>
+                <input type="number" id="portions" name="portions" required>
+        
+                <label for="image">Nom de l'image :</label>
+                <input type="text" id="image" name="image" required>
+        
+                <button type="submit">Ajouter la recette</button>
+            </form>
+        </section>        
     </main>
-
     <footer>
         <p>&copy; 2025 Cookify | Bouillon Valentine</p>
     </footer>

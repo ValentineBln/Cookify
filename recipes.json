@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "titre": "Spaghetti Carbonara",
+      "categorie": "Plat",
+      "ingredients": [
+        "200g de spaghetti",
+        "100g de lardons",
+        "2 œufs",
+        "50g de parmesan",
+        "Poivre"
+      ],
+      "etapes": [
+        "Faire cuire les spaghetti.",
+        "Faire revenir les lardons dans une poêle.",
+        "Mélanger les œufs avec le parmesan.",
+        "Incorporer le mélange aux pâtes et aux lardons."
+      ],
+      "temps": 20,
+      "portions": 2,
+      "image": "spaghetti_carbonara.jpg"
+    },
+    {
+      "id": 2,
+      "titre": "Crêpes sucrées",
+      "categorie": "Dessert",
+      "ingredients": [
+        "250g de farine",
+        "3 œufs",
+        "50cl de lait",
+        "1 pincée de sel",
+        "Beurre pour la cuisson"
+      ],
+      "etapes": [
+        "Mélanger la farine, les œufs et le lait.",
+        "Ajouter le sel.",
+        "Faire cuire les crêpes dans une poêle beurrée."
+      ],
+      "temps": 15,
+      "portions": 4,
+      "image": "crepes_sucrees.jpg"
+    }
+]  

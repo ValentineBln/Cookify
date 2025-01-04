@@ -1,4 +1,4 @@
-import { Recette } from "../models/Recette";
+import { Recette } from "../models/Recette.js";
 import * as fs from "fs";
 
 export class RecetteController {
