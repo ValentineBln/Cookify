@@ -73,10 +73,6 @@ h2 {
     width: 65%;
 }
 
-/* .recette-cards, #recette-details {
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-} */
-
 .recette-cards {
     display: flex;
     flex-wrap: wrap;
@@ -101,12 +97,17 @@ h2 {
 .recette-card h3 {
     font-size: 1.2rem;
     color: #ff7f50;
-    margin: 7px 0 8px 0;
+    margin: 10px 0 5px 0;
 }
 
 .recette-card p {
     font-size: 1rem;
-    margin-top: 2px;
+    margin-top: 3px;
+}
+
+#recette-details-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 #recette-details {
@@ -114,8 +115,10 @@ h2 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 550px;
+    width: 500px;
     display: none;
+    border-radius: 10px;
+    /* transform: translate(-50%, 0) */
 }
 
 #recette-details img {
@@ -123,21 +126,36 @@ h2 {
     border-radius: 8px;
 }
 
-#recette-details h2 {
-    margin-top: 20px;
+#recette-details h3 {
+    font-size: 1.65rem;
+    color: #ff7f50;
+    margin: 18px 0 10px 0;
+    text-align: center;
 }
 
 #recette-details ul, #recette-details ol {
     padding-left: 20px;
 }
 
+#details-contenu p, h4{
+    margin-top: 8px;
+    font-size: 1.05rem;
+}
+
+#details-contenu li, ol{
+    margin-top: 3px;
+    font-size: 1.05rem;
+}
+
 #retour-liste {
     background-color: #ff7f50;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin-bottom: 15px;
     cursor: pointer;
+    font-size: 0.85rem;
 }
 
 #retour-liste:hover {
@@ -191,6 +209,7 @@ form input, form textarea, form select {
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 1rem;
+    font-family: 'Arial', sans-serif;
 }
 
 form button {

@@ -32,11 +32,11 @@ chargerRecettes();
 // Activer le formulaire d'ajout de recette
 ajouterRecette();
 (_a = document.getElementById("retour-liste")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
-    const recetteCards = document.querySelector(".recette-cards");
+    const recettesSection = document.getElementById("recettes");
     const detailsSection = document.getElementById("recette-details");
     const ajoutRecetteSection = document.getElementById("ajout-recette");
-    // Réafficher la liste des cartes et le formulaire
-    recetteCards.style.display = "flex";
+    // Réafficher la liste des recettes et le formulaire
+    recettesSection.style.display = "block";
     ajoutRecetteSection.style.display = "block";
     // Masquer la section des détails
     detailsSection.style.display = "none";
