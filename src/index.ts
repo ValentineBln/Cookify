@@ -54,3 +54,16 @@ chargerRecettes();
 
 // Activer le formulaire d'ajout de recette
 ajouterRecette();
+
+document.getElementById("retour-liste")?.addEventListener("click", () => {
+    const recetteCards = document.querySelector(".recette-cards") as HTMLElement;
+    const detailsSection = document.getElementById("recette-details") as HTMLElement;
+    const ajoutRecetteSection = document.getElementById("ajout-recette") as HTMLElement;
+
+    // Réafficher la liste des cartes et le formulaire
+    recetteCards.style.display = "flex";
+    ajoutRecetteSection.style.display = "block";
+
+    // Masquer la section des détails
+    detailsSection.style.display = "none";
+});

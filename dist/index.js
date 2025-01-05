@@ -1,3 +1,4 @@
+var _a;
 import { Recette } from "./models/Recette.js";
 import { afficherRecettes } from "./controllers/affichageRecettes.js";
 import { ajouterRecette } from "./controllers/ajoutRecette.js";
@@ -30,3 +31,13 @@ function chargerRecettes() {
 chargerRecettes();
 // Activer le formulaire d'ajout de recette
 ajouterRecette();
+(_a = document.getElementById("retour-liste")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
+    const recetteCards = document.querySelector(".recette-cards");
+    const detailsSection = document.getElementById("recette-details");
+    const ajoutRecetteSection = document.getElementById("ajout-recette");
+    // Réafficher la liste des cartes et le formulaire
+    recetteCards.style.display = "flex";
+    ajoutRecetteSection.style.display = "block";
+    // Masquer la section des détails
+    detailsSection.style.display = "none";
+});
