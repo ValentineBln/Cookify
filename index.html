@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Valentine Bouillon">
+    <meta name="description" content="Cookify est un site de recettes de cuisine qui vous permet de découvrir, ajouter et filtrer des recettes par catégories. Découvrez des entrées, plats et desserts faciles à préparer !">
+    <meta name="keywords" content="recettes, cuisine, entrée, plat, dessert, Cookify, recettes faciles, idées de recettes, recettes rapides, cuisine maison">
+    <title>Cookify</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cookify</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-categorie="Toutes">Accueil</a></li>
+                <li><a href="#" data-categorie="Entrée">Entrées</a></li>
+                <li><a href="#" data-categorie="Plat">Plats</a></li>
+                <li><a href="#" data-categorie="Dessert">Desserts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Nos Recettes</h2>
+        <div id="container">
+            <section id="recettes">
+                <div class="recette-cards">
+                    <!-- Les cartes de recettes seront ajoutées dynamiquement -->
+                </div>
+            </section>
+            <section id="recette-details-wrapper"></section>
+                <section id="recette-details" style="display: none;">
+                    <button id="retour-liste">← Retour</button>
+                    <div id="details-contenu"></div>
+                </section>
+            </section>
+            <section id="ajout-recette">
+                <h2>Ajouter une recette</h2>
+                <form id="form-ajout-recette">
+                    <label for="titre">Titre :</label>
+                    <input type="text" id="titre" name="titre" required>
+            
+                    <label for="categorie">Catégorie :</label>
+                    <select id="categorie" name="categorie" required>
+                        <option value="Entrée">Entrée</option>
+                        <option value="Plat">Plat</option>
+                        <option value="Dessert">Dessert</option>
+                    </select>
+            
+                    <label for="ingredients">Ingrédients (séparés par des virgules) :</label>
+                    <textarea id="ingredients" name="ingredients" required></textarea>
+            
+                    <label for="etapes">Étapes (séparées par des virgules) :</label>
+                    <textarea id="etapes" name="etapes" required></textarea>
+            
+                    <label for="temps">Temps (minutes) :</label>
+                    <input type="number" id="temps" name="temps" required>
+            
+                    <label for="portions">Portions :</label>
+                    <input type="number" id="portions" name="portions" required>
+            
+                    <label for="image">Nom de l'image :</label>
+                    <input type="text" id="image" name="image" required>
+            
+                    <button type="submit">Ajouter la recette</button>
+                </form>
+            </section>
+        </div>    
+    </main>
+    <footer>
+        <p>&copy; 2025 Cookify | Bouillon Valentine</p>
+    </footer>
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
