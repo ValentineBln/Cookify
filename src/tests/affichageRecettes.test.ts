@@ -3,7 +3,6 @@ import { Recette } from "../models/Recette";
 
 describe("afficherRecettes", () => {
   beforeEach(() => {
-    // Réinitialise le DOM avant chaque test
     document.body.innerHTML = `<div class="recette-cards"></div>`;
   });
 
@@ -14,7 +13,6 @@ describe("afficherRecettes", () => {
 
     afficherRecettes(recettes);
 
-    // Vérifie que les cartes ont bien été ajoutées au DOM
     const cards = document.querySelectorAll(".recette-card");
     expect(cards.length).toBe(1);
     expect(cards[0].querySelector("h3")?.textContent).toBe("Tarte aux pommes");

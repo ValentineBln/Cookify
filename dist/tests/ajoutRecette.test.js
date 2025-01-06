@@ -1,5 +1,5 @@
 import { creerRecetteDepuisFormulaire } from "../controllers/ajoutRecette";
-// Mock du localStorage
+
 const localStorageMock = (() => {
     let store = {};
     return {
@@ -31,9 +31,9 @@ describe("creerRecetteDepuisFormulaire", () => {
     `;
     });
     test("Devrait ajouter une recette au localStorage", () => {
-        // Appelle directement la fonction
+
         creerRecetteDepuisFormulaire();
-        // Vérifie le contenu du localStorage
+
         const recettes = JSON.parse(localStorage.getItem("recettes") || "[]");
         expect(recettes.length).toBe(1);
         expect(recettes[0].titre).toBe("Tarte aux fraises");

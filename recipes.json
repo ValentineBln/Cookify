@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "titre": "Spaghetti Carbonara",
+    "categorie": "Plat",
+    "ingredients": [
+      "200g de spaghetti",
+      "100g de lardons",
+      "2 œufs",
+      "50g de parmesan",
+      "Poivre"
+    ],
+    "etapes": [
+      "Faire cuire les spaghetti.",
+      "Faire revenir les lardons dans une poêle.",
+      "Mélanger les œufs avec le parmesan.",
+      "Incorporer le mélange aux pâtes et aux lardons."
+    ],
+    "temps": 20,
+    "portions": 2,
+    "image": "spaghetti_carbonara.jpg"
+  },
+  {
+    "id": 2,
+    "titre": "Crêpes sucrées",
+    "categorie": "Dessert",
+    "ingredients": [
+      "250g de farine",
+      "3 œufs",
+      "50cl de lait",
+      "1 pincée de sel",
+      "Beurre pour la cuisson"
+    ],
+    "etapes": [
+      "Mélanger la farine, les œufs et le lait.",
+      "Ajouter le sel.",
+      "Faire cuire les crêpes dans une poêle beurrée."
+    ],
+    "temps": 15,
+    "portions": 4,
+    "image": "crepes_sucrees.jpg"
+  },
+  {
+    "id": 3,
+    "titre": "Mousse au chocolat rapide",
+    "categorie": "Dessert",
+    "ingredients": [
+      "200g de chocolat noir",
+      "3 œufs",
+      "1 cuillère à soupe de sucre"
+    ],
+    "etapes": [
+      "Faire fondre le chocolat au bain-marie.",
+      "Séparer les blancs des jaunes d'œufs. Battez les blancs en neige avec le sucre.",
+      "Mélanger les jaunes au chocolat fondu puis incorporez délicatement les blancs.",
+      "Réfrigérez 1 heure avant de servir."
+    ],
+    "temps": 15,
+    "portions": 4,
+    "image": "mousse_chocolat_rapide.jpg"
+  },
+  {
+    "id": 4,
+    "titre": "Wraps au poulet et avocat",
+    "categorie": "Plat",
+    "ingredients": [
+      "2 tortillas",
+      "1 blanc de poulet",
+      "1 avocat",
+      "1 tomate",
+      "Sauce yaourt (nature + moutarde)"
+    ],
+    "etapes": [
+      "Faire cuire le blanc de poulet pendant 10 min et le couper en tranches.",
+      "Couper l'avocat et la tomate en dés.",
+      "Étaler la sauce sur les tortillas, ajouter le poulet, l'avocat et la tomate.",
+      "Rouler les tortillas et servir."
+    ],
+    "temps": 10,
+    "portions": 2,
+    "image": "wraps_poulet_et_avocat.jpg"
+  },
+  {
+    "id": 5,
+    "titre": "Compote de pommes maison",
+    "categorie": "Dessert",
+    "ingredients": [
+      "4 pommes",
+      "1 cuillère à soupe de sucre",
+      "1/2 cuillère à café de cannelle"
+    ],
+    "etapes": [
+      "Éplucher et couper les pommes en morceaux.",
+      "Faire cuire les pommes dans une casserole avec un peu d'eau, le sucre et la cannelle pendant 10 minutes.",
+      "Mixez la compote et laissez refroidir avant de servir."
+    ],
+    "temps": 5,
+    "portions": 4,
+    "image": "compote_de_pommes_maison.jpg"
+  },
+  {
+    "id": 6,
+    "titre": "Omelette aux champignons et fines herbes",
+    "categorie": "Plat",
+    "ingredients": [
+      "3 œufs",
+      "100g de champignons de Paris",
+      "1 échalote",
+      "1 cuillère à soupe de crème fraîche",
+      "Persil frais",
+      "Sel et poivre"
+    ],
+    "etapes": [
+      "Couper les champignons et l’échalote en petits morceaux.",
+      "Faire revenir les champignons et l’échalote dans une poêle avec un peu de beurre ou d’huile pendant 5 minutes.",
+      "Battre les œufs avec la crème, le sel et le poivre.",
+      "Verser les œufs battus dans la poêle et laisser cuire à feu doux jusqu’à ce que l’omelette soit prise.",
+      "Ajouter du persil haché avant de servir."
+    ],
+    "temps": 5,
+    "portions": 2,
+    "image": "omelette_aux_champignons_et_fines_herbes.jpg"
+  },
+  {
+    "id": 7,
+    "titre": "Salade de roquette, poires et noix",
+    "categorie": "Entrée",
+    "ingredients": [
+      "100g de roquette",
+      "2 poires",
+      "50g de noix",
+      "1 cuillère à soupe de vinaigre balsamique",
+      "2 cuillère à soupe d'huile d'olive",
+      "Sel et poivre"
+    ],
+    "etapes": [
+      "Laver la roquette et la disposer dans un saladier.",
+      "Couper les poires en tranches fines et les ajouter à la roquette.",
+      "Concasser les noix et les ajouter à la salade.",
+      "Mélanger l'huile d'olive et le vinaigre pour la vinaigrette, puis assaisonner avec sel et poivre.",
+      "Verser sur la salade et mélanger."
+    ],
+    "temps": 10,
+    "portions": 4,
+    "image": "salade_de_roquette_poires_noix.jpg"
+  },
+  {
+    "id": 8,
+    "titre": "Chili con carne rapide",
+    "categorie": "Plat",
+    "ingredients": [
+      "300g de viande hachée",
+      "1 boîte de haricots rouges",
+      "1 boîte de tomates concassées",
+      "1 oignon",
+      "1 cuillère à soupe de chili en poudre",
+      "Sel et poivre"
+    ],
+    "etapes": [
+      "Faire revenir l'oignon haché dans une poêle avec un peu d'huile.",
+      "Ajouter la viande hachée et la faire cuire.",
+      "Ajouter les haricots, les tomates concassées, le chili, le sel et le poivre.",
+      "Laisser mijoter pendant 10-15 minutes. Servir chaud."
+    ],
+    "temps": 10,
+    "portions": 4,
+    "image": "chili_con_carne_rapide.jpg"
+  },
+  {
+    "id": 9,
+    "titre": "Crumble aux pommes express",
+    "categorie": "Dessert",
+    "ingredients": [
+      "4 pommes",
+      "50g de farine",
+      "50g de beurre",
+      "50g de sucre",
+      "1 cuillère à café de cannelle (optionnel)"
+    ],
+    "etapes": [
+      "Préchauffer le four à 180°C (350°F).",
+      "Éplucher les pommes, les couper en morceaux et les disposer dans un plat allant au four.",
+      "Mélanger la farine, le beurre coupé en morceaux et le sucre pour obtenir une pâte sableuse.",
+      "Répartisser cette pâte sur les pommes.",
+      "Enfourner pendant 20 à 25 minutes jusqu’à ce que le dessus soit doré."
+    ],
+    "temps": 10,
+    "portions": 4,
+    "image": "crumble_aux_pommes_express.jpg"
+  }
+]

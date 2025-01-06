@@ -1,6 +1,5 @@
 import { ajouterRecette } from "../controllers/ajoutRecette";
 
-// Mock du localStorage
 const localStorageMock = (() => {
   let store: { [key: string]: string } = {};
   return {
@@ -36,7 +35,6 @@ describe("ajouterRecette", () => {
   test("Devrait ajouter une recette au localStorage", () => {
     const form = document.getElementById("form-ajout-recette") as HTMLFormElement;
 
-    // Simule la soumission du formulaire
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       ajouterRecette();
@@ -44,7 +42,6 @@ describe("ajouterRecette", () => {
 
     form.dispatchEvent(new Event("submit"));
 
-    // Vérifie le contenu du localStorage
     const recettes = JSON.parse(localStorage.getItem("recettes") || "[]");
     expect(recettes.length).toBe(1);
     expect(recettes[0].titre).toBe("Tarte aux fraises");
